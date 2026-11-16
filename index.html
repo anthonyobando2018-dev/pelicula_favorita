@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Pelicula Favorita</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
@@ -41,7 +42,7 @@
 
           <div class="acciones">
             <a
-              class="btn"
+              class="boton"
               href="https://www.youtube.com/watch?v=3VUblDwa648"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,20 +50,162 @@
             >
             <span class="fuente">MGM Studios · Fuente externa</span>
           </div>
+        </div>
 
-          <figure class="hero__imagen">
-            <img
-              src="images/rocky.jpg"
-              alt="Boxeador con capucha y manos vendadas entrenando junto a un saco y las cuerdas del ring"
-            />
-            <span class="credito">Ilustración</span>
-            <blockquote class="cita">
-              “No se trata de lo fuerte que golpeas sino de lo fuerte que puedes
-              recibir los golpes y seguir avanzando.”
-            </blockquote>
-          </figure>
+        <figure class="hero__imagen">
+          <img
+            src="images/Rocky1.jpg"
+            alt="Boxeador con capucha y manos vendadas entrenando junto a un saco y las cuerdas del ring"
+          />
+          <span class="credito">Ilustración</span>
+          <blockquote class="cita">
+            “No se trata de lo fuerte que golpeas sino de lo fuerte que puedes
+            recibir los golpes y seguir avanzando.”
+          </blockquote>
+        </figure>
+      </section>
+
+      <!-- FICHA TÉCNICA -->
+      <section id="ficha" class="ficha">
+        <div class="contenedor">
+          <div class="ficha__cabecera">
+            <div>
+              <p class="eyebrow eyebrow--rojo">En números</p>
+              <h2 class="titulo-grande">Ficha técnica</h2>
+            </div>
+            <p class="ficha__nota">
+              Ganadora de 3 premios Óscar, incluyendo Mejor Película.
+            </p>
+          </div>
+
+          <ul class="datos">
+            <li>
+              <span class="num">/ 01</span>
+              <span class="etiqueta">Género</span>
+              <strong>Drama · Deporte</strong>
+            </li>
+            <li>
+              <span class="num">/ 02</span>
+              <span class="etiqueta">Estreno</span>
+              <strong>1976</strong>
+            </li>
+            <li>
+              <span class="num">/ 03</span>
+              <span class="etiqueta">Dirección</span>
+              <strong>John G. Avildsen</strong>
+            </li>
+            <li>
+              <span class="num">/ 04</span>
+              <span class="etiqueta">Duración</span>
+              <strong>1 h 59 min</strong>
+            </li>
+          </ul>
+
+          <div class="ficha__pie">
+            <p>
+              Actores principales: Sylvester Stallone, Talia Shire, Burt Young y
+              Carl Weathers.
+            </p>
+            <p class="firma">Escrita por Sylvester Stallone</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEGADO -->
+      <section id="legado" class="legado">
+        <span class="fantasma" aria-hidden="true">76</span>
+        <div class="contenedor legado__grid">
+          <div>
+            <p class="eyebrow"><span class="linea"></span>Más allá del ring</p>
+            <h2 class="titulo-grande titulo-grande--claro">
+              Una pelea que hizo historia
+            </h2>
+          </div>
+
+          <div class="tarjetas">
+            <article class="tarjeta">
+              <span class="num">01 / Origen</span>
+              <h3>Un guion contra todo pronóstico</h3>
+              <p>
+                Sylvester Stallone escribió el guion en apenas unos días. Aunque
+                varios estudios querían comprarlo, insistió en interpretar él
+                mismo a Rocky, incluso cuando eso significaba rechazar ofertas
+                mucho mayores.
+              </p>
+            </article>
+            <article class="tarjeta">
+              <span class="num">02 / Música</span>
+              <h3>Una melodía inolvidable</h3>
+              <p>
+                La banda sonora de Bill Conti convirtió “Gonna Fly Now” en un
+                himno universal de superación. La famosa subida por las
+                escaleras del Museo de Arte de Filadelfia sigue siendo una de
+                las escenas más reconocibles del cine.
+              </p>
+            </article>
+            <article class="tarjeta">
+              <span class="num">03 / Premios</span>
+              <h3>La favorita de la Academia</h3>
+              <p>
+                Recibió 10 nominaciones a los premios Óscar y ganó tres: Mejor
+                Película, Mejor Dirección y Mejor Montaje. Su éxito transformó
+                una producción modesta en un fenómeno internacional.
+              </p>
+            </article>
+            <article class="tarjeta tarjeta--roja">
+              <span class="num">04 / Legado</span>
+              <h3>El verdadero triunfo</h3>
+              <p>
+                Rocky no trata simplemente de ganar una pelea. Su mensaje
+                permanece porque redefine la victoria: levantarse, continuar y
+                demostrarte a ti mismo hasta dónde puedes llegar.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <dl class="stats contenedor">
+          <div>
+            <dt class="stat__num">10</dt>
+            <dd>Nominaciones al Óscar</dd>
+          </div>
+          <div>
+            <dt class="stat__num">3</dt>
+            <dd>Premios Óscar ganados</dd>
+          </div>
+          <div>
+            <dt class="stat__num">6</dt>
+            <dd>Películas de la saga original</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ENLACES -->
+      <section class="enlaces contenedor" aria-label="Fuentes relacionadas">
+        <p class="eyebrow eyebrow--rojo">Fuentes</p>
+        <div class="enlaces__lista">
+          <a
+            class="boton"
+            href="https://www.imdb.com/title/tt0075148/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ficha en IMDb <span aria-hidden="true">↗</span></a
+          >
+          <a
+            class="boton boton--borde"
+            href="https://es.wikipedia.org/wiki/Rocky_(pel%C3%ADcula)"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Wikipedia <span aria-hidden="true">↗</span></a
+          >
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="contenedor footer__inner">
+        <span>Rocky · 1976 · United Artists</span>
+        <span>Una historia sobre resistir hasta el final</span>
+      </div>
+    </footer>
   </body>
 </html>
